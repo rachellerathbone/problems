@@ -1,5 +1,5 @@
 const circular = require('./index');
-const L = require('./linkedlist');
+const L = require('../dataStructuresAndAlgos/linkedlist/index');
 const List = L.LinkedList;
 const Node = L.Node;
 
