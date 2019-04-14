@@ -8,7 +8,7 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
-// Using .slice()
+// SOLUTION 2: Using .slice()
 function chunk(array, size) {
   let chunked = []
   let index = 0
@@ -21,7 +21,7 @@ function chunk(array, size) {
   return chunked
 }
 
-// Iterating over array and pushing into a chunked array
+// SOLUTION 1: Iterating over array and pushing into a chunked array
 // function chunk(array, size) {
 //   let chunked = []
 //

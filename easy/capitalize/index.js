@@ -7,6 +7,7 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
+// SOLTUION 2
 function capitalize(str) {
   let words = []
 
@@ -17,7 +18,7 @@ function capitalize(str) {
   return words.join(' ')
 }
 
-// Using a str instead of an array
+// SOLUTION 1
 // function capitalize(str) {
 //   let result = str[0].toUpperCase()
 //
