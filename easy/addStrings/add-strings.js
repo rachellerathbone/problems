@@ -4,7 +4,7 @@ const addStrings = (num1, num2) => {
   let carry = 0
   let sum = ''
 
-  for (; i >= 0 || j >= 0 || carry > 0; i--, j--) {
+  for (i && j; i >= 0 || j >= 0 || carry > 0; i--, j--) {
     // Minus the ASCII code of '0' to get the value of the charAt(i/j)
     const digit1 = i < 0 ? 0 : num1.charAt(i) - '0'
     const digit2 = j < 0 ? 0 : num2.charAt(j) - '0'
