@@ -30,4 +30,5 @@ function levelWidth(root) {
   return width
 }
 
+
 module.exports = levelWidth;

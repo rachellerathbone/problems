@@ -8,7 +8,7 @@ const reverseList = (head) => {
   let tmp
   let newHead
 
-   while(node !== null){
+   while(node !== null) {
     tmp = node
     node = tmp.next
     tmp.next = newHead
@@ -18,7 +18,7 @@ const reverseList = (head) => {
   return newHead
 }
 
-// Runtime: 64 ms, faster than 79.53% of JavaScript online 
+// Runtime: 64 ms, faster than 79.53% of JavaScript online
 // submissions for Reverse Linked List.
 // Memory Usage: 34.8 MB, less than 87.04% of JavaScript online
 // submissions for Reverse Linked List.

@@ -38,43 +38,37 @@ const averageOfLevels = (root) => {
 // for Average of Levels in Binary Tree.
 // Memory Usage: 39 MB, less than 19.23% of JavaScript online submissions
 // for Average of Levels in Binary Tree.
-
 const averageOfLevels = (root) => {
   let res = []
   let queue = [root]
 
-  // While there are still items in the queue
-  while(queue.length > 0) {
-    // add all nodes in a level
+  while (queue.length > 0) {
     let sum = 0
-    // number of nodes in a level (to find average)
     let count = 0
-    let temp = []
+    let tmp = []
 
-    // Handle adding children
     while (queue.length > 0) {
-      // set n to the first node in the queue
       let n = queue.shift()
-      // set sum to the value of the node
       sum += n.val
-      // increment the count
       count++
 
-      // If the node has a left child add tmp
-      if (n.left !== null) {
-        temp.push(n.left)
+      if (n.left) {
+          tmp.push(n.left)
       }
 
-      // If the node has a right child add tmp
-      if (n.right !== null) {
-        temp.push(n.right)
+      if (n.right) {
+          tmp.push(n.right)
       }
     }
 
-    // Set queue to the temp arr which now holds the children
-    queue = temp
-    res.push(sum / count * 1.0)
+    queue = tmp
+    res.push(sum / count)
   }
 
   return res
 };
+
+// Runtime: 76 ms, faster than 87.38% of JavaScript online submissions 
+// for Average of Levels in Binary Tree.
+// Memory Usage: 37.9 MB, less than 96.15% of JavaScript online submissions
+// for Average of Levels in Binary Tree.

@@ -24,7 +24,7 @@ const depthSum = (nestedList, depth = 1) => {
     if (int) {
       total += int * depth
     } else {
-      total += depthSum(nestedList[i].getList(), depth+1);
+      total += depthSum(nestedList[i].getList(), depth + 1);
     }
   }
 
