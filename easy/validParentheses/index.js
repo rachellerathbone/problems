@@ -39,7 +39,10 @@ const isValid = (s) => {
       // add 1 so that open brace is at the same index as the closing
       stack.push(pairs + 1)
     } else {
-      ///
+      // or condition handles cases such as {}
+      if (stack.length === 0 || stack.pop() !== pairs) {
+          return false
+      }
     }
   }
 

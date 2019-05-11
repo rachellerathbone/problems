@@ -23,7 +23,7 @@
 // corresponding bits are different.
 
 const hammingDistance = (x, y) => {
-  let bits = x ^ y
+  let bits = x ^ y // bitwise exclusive OR boolean operator
   let count = 0
 
   while (bits > 0) {

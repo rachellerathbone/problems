@@ -11,9 +11,9 @@
 //    list.insertLast('d');
 //    fromLast(list, 2).data // 'b'
 
-function fromLast(list, n) {
-  let slow = list.getFirst()
-  let fast = list.getFirst()
+const fromLast = (list, n) => {
+  let slow = list.head
+  let fast = list.head
 
   while (n > 0) {
     fast = fast.next

@@ -64,7 +64,7 @@ const isLeaf = (node, leaves) => {
 
 module.exports = findLeaves
 
-// Runtime: 60 ms, faster than 68.55% of JavaScript online 
+// Runtime: 60 ms, faster than 68.55% of JavaScript online
 // submissions for Find Leaves of Binary Tree.
 // Memory Usage: 34 MB, less than 14.29% of JavaScript online
 // submissions for Find Leaves of Binary Tree.

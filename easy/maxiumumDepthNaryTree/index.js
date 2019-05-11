@@ -13,13 +13,8 @@
 // The total number of nodes is at most 5000.
 
 const maxDepth = (root) => {
-  if (root === null) {
-    return 0
-  }
-
-  if (!root.children) {
-    return 1
-  }
+  if (!root) return 0
+  if (!root.children) return 1
 
   let maxChildDepth = 0
 
@@ -34,7 +29,7 @@ const maxDepth = (root) => {
   return maxChildDepth + 1
 }
 
-// Runtime: 608 ms, faster than 74.94% of JavaScript online submissions 
+// Runtime: 608 ms, faster than 74.94% of JavaScript online submissions
 // for Maximum Depth of N-ary Tree.
 // Memory Usage: 80.9 MB, less than 8.70% of JavaScript online submissions
 // for Maximum Depth of N-ary Tree.

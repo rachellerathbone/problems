@@ -15,10 +15,12 @@
 // Input: ["H","a","n","n","a","h"]
 // Output: ["h","a","n","n","a","H"]
 const reverseString = (s) => {
-    for (let i = 0; i <= Math.floor((s.length - 1) / 2); i++) {
-      let el = s[i]
-      s[i] = s[s.length - 1 - i]
-      s[s.length - 1 - i] = el
+  let n = s.length
+
+  for (let i = 0; i < Math.floor(n / 2); i++) {
+    let tmp = s[i]
+    s[i] = s[n - 1 - i]
+    s[n - 1 - i] = tmp
   }
 
   return s

@@ -57,3 +57,8 @@ const removeDuplicates = (nums) => {
 
   return i + 1
 };
+
+// Runtime: 72 ms, faster than 100.00% of JavaScript online submissions 
+// for Remove Duplicates from Sorted Array.
+// Memory Usage: 37.3 MB, less than 43.38% of JavaScript online submissions
+// for Remove Duplicates from Sorted Array.

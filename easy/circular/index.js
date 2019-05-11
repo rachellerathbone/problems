@@ -12,9 +12,9 @@
 //   c.next = b;
 //   circular(l) // true
 
-function circular(list) {
-  let slow = list.getFirst()
-  let fast = list.getFirst()
+const circular = (list) => {
+  let slow = list.head
+  let fast = list.head
 
   while (fast && fast.next) {
     slow = slow.next

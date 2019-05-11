@@ -53,11 +53,11 @@ const averageOfLevels = (root) => {
       count++
 
       if (n.left) {
-          tmp.push(n.left)
+        tmp.push(n.left)
       }
 
       if (n.right) {
-          tmp.push(n.right)
+        tmp.push(n.right)
       }
     }
 
@@ -68,7 +68,7 @@ const averageOfLevels = (root) => {
   return res
 };
 
-// Runtime: 76 ms, faster than 87.38% of JavaScript online submissions 
+// Runtime: 76 ms, faster than 87.38% of JavaScript online submissions
 // for Average of Levels in Binary Tree.
 // Memory Usage: 37.9 MB, less than 96.15% of JavaScript online submissions
 // for Average of Levels in Binary Tree.

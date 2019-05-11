@@ -17,9 +17,7 @@
 // return its depth = 3.
 
 const maxDepth = (root) => {
-  if (root === null) {
-    return 0
-  }
+  if (!root) return 0
 
   let left = maxDepth(root.left)
   let right = maxDepth(root.right)

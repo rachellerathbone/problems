@@ -9,16 +9,16 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 // SOLUTION 3: Using a hashMap
-function anagrams(stringA, stringB) {
-  const aCharMap = buildCharMap(stringA)
-  const bCharMap = buildCharMap(stringB)
+const isAnagram = (s, t) => {
+  const sCharMap = buildCharMap(s)
+  const tCharMap = buildCharMap(t)
 
-  if (Object.keys(aCharMap).length !== Object.keys(bCharMap).length) {
+  if (Object.keys(sCharMap).length !== Object.keys(tCharMap).length) {
     return false
   }
 
-  for (let char in aCharMap) {
-    if (aCharMap[char] !== bCharMap[char]) {
+  for (let char in sCharMap) {
+    if (sCharMap[char] !== tCharMap[char]) {
       return false
     }
   }
@@ -26,15 +26,21 @@ function anagrams(stringA, stringB) {
   return true
 }
 
-function buildCharMap(str) {
+const buildCharMap = (str) => {
   const charMap = {}
 
   for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {
-    charMap[char] = 1 || charMap[char] + 1
+    charMap[char] = charMap[char] + 1 || 1
   }
 
   return charMap
 }
+
+// Runtime: 68 ms, faster than 97.06% of JavaScript online 
+// submissions for Valid Anagram.
+// Memory Usage: 37.6 MB, less than 48.85% of JavaScript
+// online submissions for Valid Anagram.
+
 
 // SOLUTION 2
 // function anagrams(stringA, stringB) {

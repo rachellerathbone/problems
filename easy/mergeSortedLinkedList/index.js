@@ -7,9 +7,8 @@
 // Input: 1->2->4, 1->3->4
 // Output: 1->1->2->3->4->4
 const mergeTwoLists = (l1, l2) => {
-  // Dummy node to get started
-  let mergedLinkedListHead = { val: -1, next: null}
-  let runner = mergedLinkedListHead
+  let node = new ListNode(0)
+  let runner = node
 
   while (l1 && l2) {
     if (l1.val > l2.val) {
@@ -25,10 +24,11 @@ const mergeTwoLists = (l1, l2) => {
 
   runner.next = l1 || l2
 
-  return mergedLinkedListHead.next
+  return node.next
 };
 
-// Runtime: 68 ms, faster than 99.78% of JavaScript online 
+
+// Runtime: 68 ms, faster than 99.78% of JavaScript online
 // submissions for Merge Two Sorted Lists.
 // Memory Usage: 35.5 MB, less than 63.51% of JavaScript online
 // submissions for Merge Two Sorted Lists.

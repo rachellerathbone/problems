@@ -40,16 +40,10 @@ function slowFib(n) {
 
 const fib = memoize(slowFib)
 
-// SOLUTION 2: RECURSIVE SOLUTION: exponential. For each element that is
-// added there is a dramatic increas in the number of function calls that
-// are required.
-// function fib(n) {
-//   if (n < 2) {
-//     return n
-//   }
-//
-//   return fib(n - 1) + fib(n - 2)
-// }
+// Runtime: 56 ms, faster than 99.06% of JavaScript online submissions 
+// for Fibonacci Number.
+// Memory Usage: 33.8 MB, less than 56.44% of JavaScript online submissions
+// for Fibonacci Number.
 
 // SOLUTION 1 - ITERATIVE SOLUTION --> linear runtime O(n)
 // function fib(n) {

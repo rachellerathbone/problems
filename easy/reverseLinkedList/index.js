@@ -1,16 +1,13 @@
 // Iterative solution
 const reverseList = (head) => {
-  if (!head) {
-    return head
-  }
+  if (!head) return head
 
-  let node = head
-  let tmp
-  let newHead
+  let runner = head
+  let tmp, newHead
 
-   while(node !== null) {
-    tmp = node
-    node = tmp.next
+  while (runner) {
+    tmp = runner
+    runner = tmp.next
     tmp.next = newHead
     newHead = tmp
   }

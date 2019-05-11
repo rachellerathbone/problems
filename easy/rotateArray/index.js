@@ -23,15 +23,28 @@
 // Could you do it in-place with O(1) extra space?
 const rotate = (nums, k) => {
   while (k > 0) {
-    elToShift = nums.pop()
+    let elToShift = nums.pop()
     nums.unshift(elToShift)
     k--
   }
 
   return nums
 }
+// FASTER SOLUTION
+const rotate = (nums, k) => {
+  if (k > nums.length) {
+    k = k % nums.length
+  }
 
-// Runtime: 96 ms, faster than 55.75% of JavaScript online 
+  if (k === 0) {
+    return
+  }
+
+  let splice = nums.splice(-k, k)
+  return nums.unshift(...splice)
+}
+
+// Runtime: 96 ms, faster than 55.75% of JavaScript online
 // submissions for Rotate Array.
 // Memory Usage: 35.5 MB, less than 26.42% of JavaScript online
 // submissions for Rotate Array.

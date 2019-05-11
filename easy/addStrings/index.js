@@ -17,4 +17,4 @@ const addStrings = (num1, num2) => {
   return sum
 };
 
-console.log(addStrings('10', '255'))
+module.exports = addStrings
