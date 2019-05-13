@@ -25,14 +25,7 @@
 // The size of the given array will be in the range [1,1000].
 
 const constructMaximumBinaryTree = (nums) => {
-  // Add null to the result
-  if(nums.length === 0) {
-    return null
-  }
-
-  // base case for returning a node
-  // if there is only 1 input, or when you are down to 1 node,
-  // construct the tree
+  if(nums.length === 0) return null
   if(nums.length === 1) {
     return new TreeNode(nums[0])
   }
@@ -40,9 +33,9 @@ const constructMaximumBinaryTree = (nums) => {
   // get maxIndex maxVal of the given array, construct a tree
   // node from it, and then construct a tree by slicing left of the
   // max value and right of the max value.
-  let maxIndex = getMaxIndex(nums)
-  let maxVal = nums[maxIndex]
-  let rootNode = new TreeNode(maxVal)
+  const maxIndex = getMaxIndex(nums)
+  const maxVal = nums[maxIndex]
+  const rootNode = new TreeNode(maxVal)
   rootNode.left = constructMaximumBinaryTree(nums.slice(0, maxIndex))
   rootNode.right = constructMaximumBinaryTree(nums.slice(maxIndex + 1, nums.length))
 

@@ -31,16 +31,14 @@ function memoize(fn) {
 }
 
 function slowFib(n) {
-  if (n < 2) {
-    return n
-  }
+  if (n < 2) return n
 
-  return fib(n - 1) + fib(n - 2)
+  return fib(n - 2) + fib(n - 1)
 }
 
 const fib = memoize(slowFib)
 
-// Runtime: 56 ms, faster than 99.06% of JavaScript online submissions 
+// Runtime: 56 ms, faster than 99.06% of JavaScript online submissions
 // for Fibonacci Number.
 // Memory Usage: 33.8 MB, less than 56.44% of JavaScript online submissions
 // for Fibonacci Number.
@@ -50,8 +48,8 @@ const fib = memoize(slowFib)
 //   let res = [0, 1]
 //
 //   for (let i = 2; i <= n; i++) {
-//     const a = res[i - 1]
-//     const b = res[i - 2]
+//     const a = res[i - 2]
+//     const b = res[i - 1]
 //
 //     res.push(a + b)
 //   }

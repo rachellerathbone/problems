@@ -87,3 +87,8 @@ const sortList = (head) => {
 
   return dummyHead.next
 }
+
+// Runtime: 88 ms, faster than 99.52% of JavaScript online submissions
+// for Sort List.
+// Memory Usage: 39.3 MB, less than 95.00% of JavaScript online submissions
+// for Sort List.

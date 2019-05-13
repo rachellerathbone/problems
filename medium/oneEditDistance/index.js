@@ -6,7 +6,7 @@ const isOneEditDistance = (s, t) => {
     return false
   }
 
-  if (sLen <= 2 && tLen <=2) {
+  if (sLen <= 2 && tLen <= 2) {
     if (Math.abs(tLen - sLen) === 1) {
       return true
     }

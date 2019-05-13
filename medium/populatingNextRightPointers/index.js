@@ -34,4 +34,6 @@ const connect = (root) => {
     child = null
     childHead = null
   }
+
+  return root
 };

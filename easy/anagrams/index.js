@@ -36,7 +36,7 @@ const buildCharMap = (str) => {
   return charMap
 }
 
-// Runtime: 68 ms, faster than 97.06% of JavaScript online 
+// Runtime: 68 ms, faster than 97.06% of JavaScript online
 // submissions for Valid Anagram.
 // Memory Usage: 37.6 MB, less than 48.85% of JavaScript
 // online submissions for Valid Anagram.
@@ -64,4 +64,4 @@ const buildCharMap = (str) => {
 //   return false
 // }
 
-module.exports = anagrams;
+module.exports = isAnagram;

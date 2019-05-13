@@ -10,7 +10,7 @@
 //
 // Input: "cbbd"
 // Output: "bb"
-
+// abaxabaxabb -> 9
 const longestPalindrome = (s) => {
   if (!s || s.length <= 1) {
     return s
@@ -36,7 +36,7 @@ const longestPalindrome = (s) => {
 }
 
 const expand = (s, begin, end) => {
-  while(begin >= 0 && end <= s.length - 1 && s[begin] === s[end]) {
+  while (begin >= 0 && end <= s.length - 1 && s[begin] === s[end]) {
     begin--
     end++
   }

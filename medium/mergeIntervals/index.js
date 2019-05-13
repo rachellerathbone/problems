@@ -16,7 +16,6 @@
 const merge = (intervals) => {
   intervals.sort((a,b) => a[0] - b[0])
   let results = []
-  let len = intervals.length
 
   intervals.reduce((pre, cur, idx) => {
     let merged
@@ -28,7 +27,7 @@ const merge = (intervals) => {
       merged = cur
     }
 
-    if (len - 1 === idx) {
+    if (intervals.length - 1 === idx) {
       results.push(merged)
     } else {
       return merged

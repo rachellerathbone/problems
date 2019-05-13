@@ -31,10 +31,6 @@ const wordBreak = (s, wordDict) => {
 
   for (let i = 1; i <= s.length; i++) {
     for (let j = 0; j < i; j++) {
-      if (wordBreak[i]) {
-        break // will not need to set wordBreak[i] if it's already true
-      }
-
       if (wordBreak[j] && wordDict.indexOf(s.substring(i, j)) >= 0) {
         // wordBreak[j] = previous substring, s.substring(i,j) = remaining substring
         wordBreak[i] = true
@@ -46,6 +42,21 @@ const wordBreak = (s, wordDict) => {
   }
 
   return wordBreak[s.length]
+};
+
+const wordBreak = (s, wordDict) => {
+	let t = []
+
+  for (let i = 0; i< s.length; i++) {
+    for (let j = 0; j <= i; j++) {
+      let word = s.slice(j, i + 1)
+      if (wordDict.includes(word) && (j === 0 || t[j-1])) {
+        t[i] = true
+      }
+    }
+  }
+
+  return t[s.length - 1] || false
 };
 
 // Runtime: 64 ms, faster than 92.18% of JavaScript online submissions

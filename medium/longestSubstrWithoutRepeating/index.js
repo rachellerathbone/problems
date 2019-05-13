@@ -20,24 +20,24 @@
 //              and not a substring.
 
 const lengthOfLongestSubstring = (s) => {
-  let sMap = {}
-  let start = 0
-  let maxLen = 0
-  let arr = s.split('')
+    let sMap = {}
+    let start = 0
+    let maxLen = 0
+    let chars = s.split('')
 
-  for (let i = 0; i < s.length; i++) {
-    let curr = sMap[arr[i]]
-    if (current !== null && start <= curr) {
-      curr = curr + 1
-    } else {
-      maxLen = Math.max(maxLen, i - start + 1)
+    for (let i = 0; i < s.length; i++) {
+        let curr = sMap[chars[i]]
+        if (curr !== null && start <= curr) {
+            start = curr + 1
+        } else {
+            maxLen = Math.max(maxLen, i - start + 1)
+        }
+
+        sMap[chars[i]] = i
     }
 
-    sMap[arr[i]] = i
-  }
-
-  return maxLen
-}
+    return maxLen
+};
 
 // Runtime: 108 ms, faster than 73.82% of JavaScript online submissions for
 // Longest Substring Without Repeating Characters.
