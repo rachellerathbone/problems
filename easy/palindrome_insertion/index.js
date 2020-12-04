@@ -3,12 +3,12 @@ const palindromeInsertion = (str) => {
   let j = str.length - 1
   let mismatchCounter = 0
 
-  while(i <= j) {
+  while (i <= j) {
     if (str.charAt(i) === str.charAt(j)) {
         i++
         j--
         continue
-    } else if(str.charAt(i) !== str.charAt(j)) {
+    } else if (str.charAt(i) !== str.charAt(j)) {
       i++
       mismatchCounter++
     }

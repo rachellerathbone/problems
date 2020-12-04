@@ -16,8 +16,6 @@
 // Output: 4
 const singleNumber = (nums) => {
   const sorted = nums.sort()
-  const len = sorted.length - 1
-
   let start = 0
   let end = 1
 

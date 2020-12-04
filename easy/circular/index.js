@@ -13,6 +13,7 @@
 //   circular(l) // true
 
 const circular = (list) => {
+  // create 2 pointers set to head = slow & fast
   let slow = list.head
   let fast = list.head
 

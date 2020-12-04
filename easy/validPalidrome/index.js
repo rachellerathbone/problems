@@ -14,10 +14,9 @@
 // Output: false
 
 const isPalindrome = (s) => {
-  let re = /[^A-Za-z0-9]/g
-  s = s.toLowerCase().replace(re, '')
+  s = s.toLowerCase().replace(/[^\w]/g, '')
 
-  for (let i = 0; i < s.length/2; i++) {
+  for (let i = 0; i < s.length / 2; i++) {
     if (s[i] !== s[s.length - 1 - i]) {
       return false
     }

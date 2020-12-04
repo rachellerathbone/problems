@@ -9,24 +9,37 @@
 //   fib(4) === 3
 
 // SOLUTION 3: Using memoization to speed up slow recursive algo
+// REUSABLE FOR ANY RECURSIVE METHOD: UNKNOWN NUM OF ARGS
+// function memoize(fn) {
+//   // Declare storage area
+//   const cache = {}
+//
+//   // Using the spread operator allows us to reuse this function for
+//   // other slow algos that may have more than 1 arg
+//   return function(...args) {
+//     // check to see if we ever called this function with this particular
+//     // set of args before
+//     if (cache[args]) {
+//       return cache[args]
+//     }
+//
+//     const result = fn.apply(this, args)
+//     // at the key args store the result that we just created
+//     cache[args] = result
+//
+//     return result
+//   }
+// }
+
 function memoize(fn) {
-  // Declare storage area
   const cache = {}
 
-  // Using the spread operator allows us to reuse this function for
-  // other slow algos that may have more than 1 arg
-  return function(...args) {
-    // check to see if we ever called this function with this particular
-    // set of args before
-    if (cache[args]) {
-      return cache[args]
-    }
+  return function(args) {
+    if (cache[args]) return cache[args]
 
-    const result = fn.apply(this, args)
-    // at the key args store the result that we just created
-    cache[args] = result
+    cache[args] = fn(args)
 
-    return result
+    return cache[args]
   }
 }
 

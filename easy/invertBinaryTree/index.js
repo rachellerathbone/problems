@@ -23,9 +23,7 @@
 // can’t invert a binary tree on a whiteboard so f*** off.
 
 const invertTree = (root) => {
-  if (!root) {
-    return root
-  }
+  if (!root) return root
 
   invertTree(root.left)
   invertTree(root.right)

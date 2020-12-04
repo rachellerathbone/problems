@@ -12,6 +12,7 @@
 //    fromLast(list, 2).data // 'b'
 
 const fromLast = (list, n) => {
+  // create 2 trackers slow, fast
   let slow = list.head
   let fast = list.head
 
