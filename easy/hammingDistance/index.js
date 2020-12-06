@@ -34,6 +34,8 @@ const hammingDistance = (x, y) => {
   return count
 };
 
+module.exports = hammingDistance
+
 // Runtime: 56 ms, faster than 100.00% of JavaScript online submissions
 // for Hamming Distance.
 // Memory Usage: 33.7 MB, less than 67.47% of JavaScript online submissions

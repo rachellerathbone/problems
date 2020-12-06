@@ -13,3 +13,5 @@ const isPalindrome = (x) => {
 
   return x === rev || x === Math.floor(rev / 10)
 };
+
+module.exports = isPalindrome

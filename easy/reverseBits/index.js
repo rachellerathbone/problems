@@ -22,3 +22,5 @@ const reverseBits = function(n) {
 // The padStart() method pads the current string with another string (multiple times, if needed)
 // until the resulting string reaches the given length. The padding is applied from the start of
 // the current string.
+
+module.exports = reverseBits

@@ -16,11 +16,9 @@ function decimalToBinary(inputNum) {
   return binary
 }
 
-console.log(decimalToBinary(20))
-
 // Using toString
 function decToBin(dec){
   return (dec >>> 0).toString(2)
 }
 
-console.log(decToBin(20))
+module.exports = decimalToBinary

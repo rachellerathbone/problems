@@ -42,3 +42,5 @@ const mergeTrees = (t1, t2) => {
 // submissions for Merge Two Binary Trees.
 // Memory Usage: 40 MB, less than 93.94% of JavaScript online
 // submissions for Merge Two Binary Trees.
+
+module.exports = mergeTrees

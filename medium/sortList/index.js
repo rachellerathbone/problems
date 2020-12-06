@@ -92,3 +92,5 @@ const sortList = (head) => {
 // for Sort List.
 // Memory Usage: 39.3 MB, less than 95.00% of JavaScript online submissions
 // for Sort List.
+
+module.exports = sortList

@@ -17,3 +17,6 @@ const sortedSquares = (A) => {
 
   return sortedArr.sort((a, b) => a - b)
 }
+
+module.exports = sortedSquares
+

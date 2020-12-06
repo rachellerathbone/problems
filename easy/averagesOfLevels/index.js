@@ -13,26 +13,26 @@
 // level 2 is 11. Hence return [3, 14.5, 11]
 
 // Recursive solution - DFS
-const averageOfLevels = (root) => {
-  const levels = []
+// const averageOfLevels = (root) => {
+//   const levels = []
 
-  dfs(root, 0)
-  return levels
-  // return levels.map(({ sum, count }) => sum / count)
+//   dfs(root, 0)
+//   return levels
+//   // return levels.map(({ sum, count }) => sum / count)
 
-  function dfs(node, level) {
-    if (!node) {
-      return
-    }
+//   function dfs(node, level) {
+//     if (!node) {
+//       return
+//     }
 
-    levels[level] = levels[level]
-    levels[level] = levels[level] || { sum: 0, count: 0 }
-    levels[level].count++
-    levels[level++].sum += node.val
-    dfs(node.left, level)
-    dfs(node.right, level)
-  }
-}
+//     levels[level] = levels[level]
+//     levels[level] = levels[level] || { sum: 0, count: 0 }
+//     levels[level].count++
+//     levels[level++].sum += node.val
+//     dfs(node.left, level)
+//     dfs(node.right, level)
+//   }
+// }
 
 // Runtime: 76 ms, faster than 87.43% of JavaScript online submissions
 // for Average of Levels in Binary Tree.
@@ -72,3 +72,5 @@ const averageOfLevels = (root) => {
 // for Average of Levels in Binary Tree.
 // Memory Usage: 37.9 MB, less than 96.15% of JavaScript online submissions
 // for Average of Levels in Binary Tree.
+
+module.exports = averageOfLevels;

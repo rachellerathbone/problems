@@ -43,3 +43,5 @@ const lengthOfLongestSubstring = (s) => {
 // Longest Substring Without Repeating Characters.
 // Memory Usage: 41.1 MB, less than 47.42% of JavaScript online submissions for
 // Longest Substring Without Repeating Characters.
+
+module.exports = lengthOfLongestSubstring

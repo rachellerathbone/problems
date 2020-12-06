@@ -33,3 +33,5 @@ const groupAnagrams = (strs) => {
 // online submissions for Group Anagrams.
 // Memory Usage: 44.7 MB, less than 90.91% of JavaScript
 // online submissions for Group Anagrams.
+
+module.exports = groupAnagrams

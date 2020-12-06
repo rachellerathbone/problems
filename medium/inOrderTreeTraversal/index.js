@@ -34,3 +34,5 @@ const inorderTraversal = (root) => {
 // Binary Tree Inorder Traversal.
 // Memory Usage: 33.8 MB, less than 43.48% of JavaScript online
 // submissions for Binary Tree Inorder Traversal.
+
+module.exports = inorderTraversal

@@ -31,3 +31,5 @@ const maxDepth = (root) => {
 // for Maximum Depth of Binary Tree.
 // Memory Usage: 36.9 MB, less than 50.47% of JavaScript online submissions
 // for Maximum Depth of Binary Tree.
+
+module.exports = maxDepth

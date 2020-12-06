@@ -51,3 +51,5 @@ const threeSum = (nums) => {
 
   return result
 };
+
+module.exports = threeSum

@@ -42,3 +42,5 @@ const merge = (intervals) => {
 // Merge Intervals.
 // Memory Usage: 37.4 MB, less than 33.34% of JavaScript online submissions
 // for Merge Intervals.
+
+module.exports = merge

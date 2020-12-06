@@ -91,3 +91,5 @@ LRUCache.prototype.put = function(key, value) {
 // for LRU Cache.
 // Memory Usage: 58.8 MB, less than 55.95% of JavaScript
 // online submissions for LRU Cache.
+
+module.exports = LRUCache

@@ -21,16 +21,16 @@
 // Try to come up as many solutions as you can, there are at least 3
 // different ways to solve this problem.
 // Could you do it in-place with O(1) extra space?
-const rotate = (nums, k) => {
-  while (k > 0) {
-    let elToShift = nums.pop()
-    nums.unshift(elToShift)
-    k--
-  }
+// const rotate = (nums, k) => {
+//   while (k > 0) {
+//     let elToShift = nums.pop()
+//     nums.unshift(elToShift)
+//     k--
+//   }
 
-  return nums
-}
-// FASTER SOLUTION
+//   return nums
+// }
+// * FASTER SOLUTION
 const rotate = (nums, k) => {
   if (k > nums.length) {
     k = k % nums.length
@@ -48,3 +48,5 @@ const rotate = (nums, k) => {
 // submissions for Rotate Array.
 // Memory Usage: 35.5 MB, less than 26.42% of JavaScript online
 // submissions for Rotate Array.
+
+module.exports = rotate

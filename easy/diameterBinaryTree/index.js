@@ -45,7 +45,9 @@ const diameterOfBinaryTree = (root) => {
   }
 };
 
-// Runtime: 60 ms, faster than 98.79% of JavaScript online submissions for 
+// Runtime: 60 ms, faster than 98.79% of JavaScript online submissions for
 // Diameter of Binary Tree.
 // Memory Usage: 37 MB, less than 62.50% of JavaScript online submissions
 // for Diameter of Binary Tree.
+
+module.exports = diameterOfBinaryTree

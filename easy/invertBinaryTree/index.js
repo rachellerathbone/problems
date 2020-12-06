@@ -39,3 +39,5 @@ const invertTree = (root) => {
 // for Invert Binary Tree.
 // Memory Usage: 33.9 MB, less than 9.88% of JavaScript online submissions
 // for Invert Binary Tree.
+
+module.exports = invertTree

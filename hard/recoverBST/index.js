@@ -58,8 +58,10 @@ const recoverTree = (root) => {
     traverse(node.right)
   }
 };
-// 
+//
 // Runtime: 120 ms, faster than 100.00% of JavaScript online submissions
 // for Recover Binary Search Tree.
 // Memory Usage: 40.7 MB, less than 45.45% of JavaScript online submissions
 // for Recover Binary Search Tree.
+
+module.exports = recoverTree

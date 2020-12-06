@@ -1,4 +1,4 @@
-// Given a binary tree, imagine yourself standing on the right side of 
+// Given a binary tree, imagine yourself standing on the right side of
 // it, return the values of the nodes you can see ordered from top to bottom.
 //
 // Example:
@@ -36,3 +36,4 @@ const rightSideView = (root) => {
 // Binary Tree Right Side View.
 // Memory Usage: 34.1 MB, less than 65.38% of JavaScript online submissions
 // for Binary Tree Right Side View.
+module.exports = rightSideView

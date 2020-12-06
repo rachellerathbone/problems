@@ -35,7 +35,7 @@ const isValidBST = (root, min = null, max = null) => {
     if (max !== null && root.val >= max) return false
 
     return isValidBST(root.left, min, root.val) &&
-            isValidBST(root.right, root.val, max)                                
+            isValidBST(root.right, root.val, max)
 };
 
 
@@ -43,3 +43,5 @@ const isValidBST = (root, min = null, max = null) => {
 // Validate Binary Search Tree.
 // Memory Usage: 37.3 MB, less than 45.45% of JavaScript online submissions for
 // Validate Binary Search Tree.
+
+module.exports = isValidBST

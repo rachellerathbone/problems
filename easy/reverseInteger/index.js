@@ -39,3 +39,5 @@ const reverse = (x) => {
 // for Reverse Integer.
 // Memory Usage: 35.9 MB, less than 42.55% of JavaScript online submissions
 // for Reverse Integer.
+
+module.exports = reverse

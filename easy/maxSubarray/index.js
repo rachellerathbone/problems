@@ -25,7 +25,9 @@ const maxSubArray = (nums) => {
   return max
 };
 
-// Runtime: 64 ms, faster than 97.71% of JavaScript online submissions 
+// Runtime: 64 ms, faster than 97.71% of JavaScript online submissions
 // for Maximum Subarray.
 // Memory Usage: 35.3 MB, less than 36.58% of JavaScript online submissions
 // for Maximum Subarray.
+
+module.exports = maxSubArray

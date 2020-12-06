@@ -37,7 +37,9 @@ const missingNumber = (nums) => {
   return total - numTotal
 };
 
-// Runtime: 80 ms, faster than 53.44% of JavaScript online 
+// Runtime: 80 ms, faster than 53.44% of JavaScript online
 // submissions for Missing Number.
 // Memory Usage: 35.9 MB, less than 76.67% of JavaScript online
 // submissions for Missing Number.
+
+module.exports = missingNumber

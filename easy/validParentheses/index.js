@@ -53,3 +53,5 @@ const isValid = (s) => {
 // for Valid Parentheses.
 // Memory Usage: 33.9 MB, less than 62.47% of JavaScript online
 // submissions for Valid Parentheses.
+
+module.exports = isValid

@@ -31,7 +31,9 @@ const lowestCommonAncestor = (root, p, q) => {
   return (resL && resR) ? root : (resL || resR)
 };
 
-// Runtime: 52 ms, faster than 100.00% of JavaScript online submissions for 
+// Runtime: 52 ms, faster than 100.00% of JavaScript online submissions for
 // Lowest Common Ancestor of a Binary Tree.
 // Memory Usage: 41.6 MB, less than 50.00% of JavaScript online submissions
 // for Lowest Common Ancestor of a Binary Tree.
+
+module.exports = lowestCommonAncestor

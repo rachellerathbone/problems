@@ -30,7 +30,9 @@ const findDuplicates = (nums) => {
   return dupes
 };
 
-// Runtime: 144 ms, faster than 53.42% of JavaScript online 
+// Runtime: 144 ms, faster than 53.42% of JavaScript online
 // submissions for Find All Duplicates in an Array.
 // Memory Usage: 54.4 MB, less than 7.84% of JavaScript online
 // submissions for Find All Duplicates in an Array.
+
+module.exports = findDuplicates

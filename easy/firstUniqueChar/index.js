@@ -26,3 +26,5 @@ const firstUniqChar = (s) => {
 // for First Unique Character in a String.
 // Memory Usage: 37.5 MB, less than 93.55% of JavaScript online submissions
 // for First Unique Character in a String.
+
+module.exports = firstUniqChar

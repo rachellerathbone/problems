@@ -31,3 +31,5 @@ const reverseString = (s) => {
 // submissions for Reverse String.
 // Memory Usage: 46.8 MB, less than 76.04% of JavaScript online
 // submissions for Reverse String.
+
+module.exports = reverseString

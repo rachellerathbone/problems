@@ -37,3 +37,5 @@ const connect = (root) => {
 
   return root
 };
+
+module.exports = connect

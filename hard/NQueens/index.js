@@ -1,4 +1,4 @@
-// The n-queens puzzle is the problem of placing n queens on an n×n 
+// The n-queens puzzle is the problem of placing n queens on an n×n
 // chessboard such that no two queens attack each other.
 //
 //
@@ -52,3 +52,4 @@ const backtrack = (res, n, board = [], r = 0) => {
 // for N-Queens.
 // Memory Usage: 37.7 MB, less than 45.45% of JavaScript online submissions
 // for N-Queens.
+module.exports = solveNQueens

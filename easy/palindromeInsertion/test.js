@@ -6,6 +6,6 @@ test('palindromeInsertion function is defined', () => {
 
 test('Returns number of minimum insertions to make str a palindrome', () => {
   expect(palindromeInsertion('aa')).toEqual(0);
-  expect(palindromeInsertion('aab')).toEqual(1);
+  expect(palindromeInsertion('aab')).toEqual(2);
   expect(palindromeInsertion('abcdba')).toEqual(1);
 });

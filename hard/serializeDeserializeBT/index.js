@@ -71,3 +71,5 @@ const deserialize = (data) => {
 
   return deserializer(data)
 };
+
+module.exports = serialize

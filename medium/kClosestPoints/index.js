@@ -45,19 +45,21 @@ const distanceFromOrigin = (point) => {
 // Memory Usage: 48.3 MB, less than 61.45% of JavaScript
 // online submissions for K Closest Points to Origin.
 
-const kClosest = (points, K) => {
-  points.sort((p1, p2) => {
-    const distanceFromOrigin1 = distanceFromOrigin(p1)
-    const distanceFromOrigin2 = distanceFromOrigin(p2)
+// const kClosest = (points, K) => {
+//   points.sort((p1, p2) => {
+//     const distanceFromOrigin1 = distanceFromOrigin(p1)
+//     const distanceFromOrigin2 = distanceFromOrigin(p2)
 
-    return distanceFromOrigin1 - distanceFromOrigin2
-  })
+//     return distanceFromOrigin1 - distanceFromOrigin2
+//   })
 
 
-  return points.slice(0, K)
-}
+//   return points.slice(0, K)
+// }
 
-const distanceFromOrigin = (point) => {
-  const [x, y] = point
-  return (x * x) + (y * y)
-}
+// const distanceFromOrigin = (point) => {
+//   const [x, y] = point
+//   return (x * x) + (y * y)
+// }
+
+module.exports = kClosest

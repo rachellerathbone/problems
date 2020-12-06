@@ -45,7 +45,9 @@ const maxProfit = (prices) => {
   return maxProfit
 }
 
-// Runtime: 64 ms, faster than 98.07% of JavaScript online submissions for Best 
+// Runtime: 64 ms, faster than 98.07% of JavaScript online submissions for Best
 // Time to Buy and Sell Stock.
 // Memory Usage: 35.5 MB, less than 40.72% of JavaScript online submissions for
 // Best Time to Buy and Sell Stock.
+
+module.exports = maxProfit;

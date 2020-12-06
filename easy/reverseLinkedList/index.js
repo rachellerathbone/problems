@@ -1,19 +1,19 @@
 // Iterative solution
-const reverseList = (head) => {
-  if (!head) return head
+// const reverseList = (head) => {
+//   if (!head) return head
 
-  let runner = head
-  let tmp, newHead
+//   let runner = head
+//   let tmp, newHead
 
-  while (runner) {
-    tmp = runner
-    runner = tmp.next
-    tmp.next = newHead
-    newHead = tmp
-  }
+//   while (runner) {
+//     tmp = runner
+//     runner = tmp.next
+//     tmp.next = newHead
+//     newHead = tmp
+//   }
 
-  return newHead
-}
+//   return newHead
+// }
 
 // Runtime: 64 ms, faster than 79.53% of JavaScript online
 // submissions for Reverse Linked List.
@@ -37,3 +37,5 @@ const reverseList = (head) => {
 // submissions for Reverse Linked List.
 // Memory Usage: 35.4 MB, less than 14.57% of JavaScript online
 // submissions for Reverse Linked List.
+
+module.exports = reverseList

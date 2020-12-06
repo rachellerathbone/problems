@@ -1,4 +1,4 @@
-// There are two sorted arrays nums1 and nums2 of size m and 
+// There are two sorted arrays nums1 and nums2 of size m and
 // n respectively.
 //
 // Find the median of the two sorted arrays. The overall run
@@ -67,3 +67,5 @@ const findKth = (A, B, k,
 // Median of Two Sorted Arrays.
 // Memory Usage: 39.4 MB, less than 43.21% of JavaScript online submissions for
 // Median of Two Sorted Arrays.
+
+module.exports = findMedianSortedArrays

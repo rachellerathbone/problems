@@ -32,3 +32,5 @@ const mergeTwoLists = (l1, l2) => {
 // submissions for Merge Two Sorted Lists.
 // Memory Usage: 35.5 MB, less than 63.51% of JavaScript online
 // submissions for Merge Two Sorted Lists.
+
+module.exports = mergeTwoLists

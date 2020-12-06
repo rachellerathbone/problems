@@ -15,30 +15,30 @@
 // The result can be in any order.
 
 // FIRST SOLUTION O(n)
-const intersection = (nums1, nums2) => {
-   const n1Hash = createHash(nums1)
-   const n2Hash = createHash(nums2)
+// const intersection = (nums1, nums2) => {
+//    const n1Hash = createHash(nums1)
+//    const n2Hash = createHash(nums2)
 
-   let res = []
+//    let res = []
 
-   for (let key in n1Hash) {
-      if (n1Hash[key] === n2Hash[key]) {
-        res.push(key)
-      }
-   }
+//    for (let key in n1Hash) {
+//       if (n1Hash[key] === n2Hash[key]) {
+//         res.push(key)
+//       }
+//    }
 
-  return res
-}
+//   return res
+// }
 
-const createHash = (arr) => {
-  let arrHash = {}
+// const createHash = (arr) => {
+//   let arrHash = {}
 
-  for (let i of arr) {
-    arrHash[i] = 1
-  }
+//   for (let i of arr) {
+//     arrHash[i] = 1
+//   }
 
-  return arrHash
-}
+//   return arrHash
+// }
 
 // Runtime: 64 ms, faster than 72.23% of JavaScript online submissions
 // for Intersection of Two Arrays.
@@ -57,7 +57,9 @@ const intersection = (nums1, nums2) => {
   return Object.keys(intersection).map(val => parseInt(val))
 }
 
-// Runtime: 60 ms, faster than 98.69% of JavaScript online submissions for 
+// Runtime: 60 ms, faster than 98.69% of JavaScript online submissions for
 // Intersection of Two Arrays.
 // Memory Usage: 34.5 MB, less than 63.64% of JavaScript
 // online submissions for Intersection of Two Arrays.
+
+module.exports = intersection

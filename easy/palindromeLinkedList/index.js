@@ -40,7 +40,9 @@ const isPalindrome = (head) => {
   return true
 };
 
-// Runtime: 68 ms, faster than 99.49% of JavaScript online submissions 
+// Runtime: 68 ms, faster than 99.49% of JavaScript online submissions
 // for Palindrome Linked List.
 // Memory Usage: 39.6 MB, less than 53.73% of JavaScript online submissions
 // for Palindrome Linked List.
+
+module.exports = isPalindrome

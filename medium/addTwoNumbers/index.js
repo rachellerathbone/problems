@@ -43,3 +43,5 @@ const addTwoNumbers = (l1, l2) => {
 // submissions for Add Two Numbers.
 // Memory Usage: 38.6 MB, less than 35.41% of JavaScript online
 // submissions for Add Two Numbers.
+
+module.exports = addTwoNumbers

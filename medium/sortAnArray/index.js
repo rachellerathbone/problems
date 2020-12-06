@@ -27,7 +27,9 @@ const sortArray = (nums) => {
   return sortArray(lesser).concat(pivot, sortArray(greater))
 }
 
-// Runtime: 140 ms, faster than 35.39% of JavaScript online submissions 
+// Runtime: 140 ms, faster than 35.39% of JavaScript online submissions
 // for Sort an Array.
 // Memory Usage: 54.7 MB, less than 100.00% of JavaScript online submissions
 // for Sort an Array.
+
+module.exports = sortArray

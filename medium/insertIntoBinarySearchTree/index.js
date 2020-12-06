@@ -4,31 +4,31 @@
 // for Insert into a Binary Search Tree.
 
 // ITERATIVE SOLUTION
-const insertIntoBST = (root, val) => {
-  if (!root) return node
+// const insertIntoBST = (root, val) => {
+//   if (!root) return node
 
-  let node  = new TreeNode(val)
-  let parent = null
-  let curr = root
+//   let node  = new TreeNode(val)
+//   let parent = null
+//   let curr = root
 
-  while (curr) {
-    parent = curr
+//   while (curr) {
+//     parent = curr
 
-    if (curr.val < val) {
-      curr = curr.right
-    } else {
-      curr = curr.left
-    }
-  }
+//     if (curr.val < val) {
+//       curr = curr.right
+//     } else {
+//       curr = curr.left
+//     }
+//   }
 
-  if (parent.val < val) {
-    parent.right = node
-  } else {
-    parent.left = node
-  }
+//   if (parent.val < val) {
+//     parent.right = node
+//   } else {
+//     parent.left = node
+//   }
 
-  return root
-};
+//   return root
+// };
 
 // RECURSIVE SOLUTION
 const insertIntoBST = (root, val) => {
@@ -55,3 +55,5 @@ const insertIntoBST = (root, val) => {
 // for Insert into a Binary Search Tree.
 // Memory Usage: 41.7 MB, less than 91.04% of JavaScript online submissions
 // for Insert into a Binary Search Tree.
+
+module.exports = insertIntoBST

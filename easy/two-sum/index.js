@@ -12,22 +12,22 @@
 // return [0, 1].
 
 // BRUTE FORCE O(n^2)
-const twoSum = (numbers, target) => {
-  let result = []
+// const twoSum = (numbers, target) => {
+//   let result = []
 
-  for (let i = 0; i < numbers.length; i++) {
-    for (let j = i + 1; j < numbers.length; j++) {
-      if (numbers[i] + numbers[j] === target) {
-        result.push(i + 1)
-        result.push(j + 1)
-      }
-    }
-  }
+//   for (let i = 0; i < numbers.length; i++) {
+//     for (let j = i + 1; j < numbers.length; j++) {
+//       if (numbers[i] + numbers[j] === target) {
+//         result.push(i + 1)
+//         result.push(j + 1)
+//       }
+//     }
+//   }
 
-  return result
-}
+//   return result
+// }
 
-// Slightly improved version
+// * Slightly improved version
 const twoSum = (numbers, target) => {
   let result = []
 
@@ -45,23 +45,25 @@ const twoSum = (numbers, target) => {
 }
 
 // Using a hashmap O(n)
-const twoSum = (numbers, target) =>  {
-  let numObject = {}
+// const twoSum = (numbers, target) =>  {
+//   let numObject = {}
 
-  for (let i = 0; i < numbers.length; i++) {
-    numObject[numbers[i]] = i
-  }
+//   for (let i = 0; i < numbers.length; i++) {
+//     numObject[numbers[i]] = i
+//   }
 
-  for (let i = 0; i < numbers.length; i++) {
-    let diff = target - numbers[i]
+//   for (let i = 0; i < numbers.length; i++) {
+//     let diff = target - numbers[i]
 
-    if (numObject.hasOwnProperty(diff) && numObject[diff] !== i) {
-      return [i + 1, numObject[diff] + 1]
-    }
-  }
-}
+//     if (numObject.hasOwnProperty(diff) && numObject[diff] !== i) {
+//       return [i + 1, numObject[diff] + 1]
+//     }
+//   }
+// }
 
-// Runtime: 60 ms, faster than 94.23% of JavaScript online 
+// Runtime: 60 ms, faster than 94.23% of JavaScript online
 // submissions for Two Sum.
 // Memory Usage: 36.1 MB, less than 15.16% of JavaScript online
 // submissions for Two Sum.
+
+module.exports = twoSum

@@ -41,7 +41,9 @@ const maxPathSum = (root) => {
   }
 };
 
-// Runtime: 72 ms, faster than 99.14% of JavaScript online 
+// Runtime: 72 ms, faster than 99.14% of JavaScript online
 // submissions for Binary Tree Maximum Path Sum.
 // Memory Usage: 41.7 MB, less than 42.42% of JavaScript
 // online submissions for Binary Tree Maximum Path Sum.
+
+module.exports = maxPathSum

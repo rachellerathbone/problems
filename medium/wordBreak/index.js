@@ -23,26 +23,26 @@
 // Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
 // Output: false
 
-const wordBreak = (s, wordDict) => {
-  if (!wordDict) return false
+// const wordBreak = (s, wordDict) => {
+//   if (!wordDict) return false
 
-  let wordBreak = [s.length + 1]
-  wordBreak[0] = true
+//   let wordBreak = [s.length + 1]
+//   wordBreak[0] = true
 
-  for (let i = 1; i <= s.length; i++) {
-    for (let j = 0; j < i; j++) {
-      if (wordBreak[j] && wordDict.indexOf(s.substring(i, j)) >= 0) {
-        // wordBreak[j] = previous substring, s.substring(i,j) = remaining substring
-        wordBreak[i] = true
-        break
-      }
+//   for (let i = 1; i <= s.length; i++) {
+//     for (let j = 0; j < i; j++) {
+//       if (wordBreak[j] && wordDict.indexOf(s.substring(i, j)) >= 0) {
+//         // wordBreak[j] = previous substring, s.substring(i,j) = remaining substring
+//         wordBreak[i] = true
+//         break
+//       }
 
-      wordBreak[i] = false
-    }
-  }
+//       wordBreak[i] = false
+//     }
+//   }
 
-  return wordBreak[s.length]
-};
+//   return wordBreak[s.length]
+// };
 
 const wordBreak = (s, wordDict) => {
 	let t = []
@@ -63,3 +63,5 @@ const wordBreak = (s, wordDict) => {
 // for Word Break.
 // Memory Usage: 36.3 MB, less than 76.06% of JavaScript online submissions
 // for Word Break.
+
+module.exports = wordBreak

@@ -52,3 +52,5 @@ const rotate = (matrix) => {
 
   return matrix
 };
+
+module.exports = rotate

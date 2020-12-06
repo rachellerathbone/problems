@@ -98,7 +98,9 @@ const value = (r) => {
   return -1
 }
 
-// Runtime: 160 ms, faster than 99.96% of JavaScript online 
+// Runtime: 160 ms, faster than 99.96% of JavaScript online
 // submissions for Roman to Integer.
 // Memory Usage: 40 MB, less than 60.26% of JavaScript online
 // submissions for Roman to Integer.
+
+module.exports = romanToInt

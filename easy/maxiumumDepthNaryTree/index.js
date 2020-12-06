@@ -33,3 +33,5 @@ const maxDepth = (root) => {
 // for Maximum Depth of N-ary Tree.
 // Memory Usage: 80.9 MB, less than 8.70% of JavaScript online submissions
 // for Maximum Depth of N-ary Tree.
+
+module.exports = maxDepth

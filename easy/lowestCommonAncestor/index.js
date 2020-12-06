@@ -41,3 +41,5 @@ const lowestCommonAncestor = (root, p, q) => {
 // Lowest Common Ancestor of a Binary Search Tree.
 // Memory Usage: 43.8 MB, less than 6.00% of JavaScript online submissions
 // for Lowest Common Ancestor of a Binary Search Tree.
+
+module.exports = lowestCommonAncestor
