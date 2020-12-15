@@ -90,6 +90,7 @@ class LinkedList {
   getAt(index) {
     let counter = 0;
     let node = this.head;
+
     while (node) {
       if (counter === index) {
         return node;
@@ -98,6 +99,7 @@ class LinkedList {
       counter++;
       node = node.next;
     }
+
     return null;
   }
 
