@@ -34,7 +34,11 @@ const checkIfExist = function(arr) {
     const map = {};
 
     for (const n of arr) {
-        if (map[n * 2] || map[n / 2]) return true; // check if have *2, /2
+        // check if have *2, /2
+        if (map[n * 2] || map[n / 2]) {
+            return true;
+        }
+
         map[n] = true; // flag it
     }
 

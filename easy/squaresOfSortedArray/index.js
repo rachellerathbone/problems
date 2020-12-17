@@ -10,13 +10,25 @@
 //
 // Input: [-7,-3,2,3,11]
 // Output: [4,9,9,49,121]
-const sortedSquares = (A) => {
-  let sortedArr = A.map((x) => {
-    return Math.pow(x, 2);
-  })
+// const sortedSquares = (A) => {
+//   let sortedArr = A.map((x) => {
+//     return Math.pow(x, 2);
+//   })
 
-  return sortedArr.sort((a, b) => a - b)
-}
+//   return sortedArr.sort((a, b) => a - b)
+// }
+
+// in place solution with O(n) time, 0(1) space
+
+const sortedSquares = function(nums) {
+  for (let i = 0; i < nums.length; i++) {
+      nums[i] = nums[i] ** 2
+  }
+
+  nums.sort((a, b) => a - b)
+
+  return nums
+};
 
 module.exports = sortedSquares
 
