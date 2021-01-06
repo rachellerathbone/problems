@@ -1,18 +1,18 @@
 // Iterative solution
 // const reverseList = (head) => {
-//   if (!head) return head
+  // if (!head) return head
 
-//   let runner = head
-//   let tmp, newHead
+  // let runner = head
+  // let tmp, newHead
 
-//   while (runner) {
-//     tmp = runner
-//     runner = tmp.next
-//     tmp.next = newHead
-//     newHead = tmp
-//   }
+  // while (runner) {
+  //   tmp = runner
+  //   runner = tmp.next
+  //   tmp.next = newHead
+  //   newHead = tmp
+  // }
 
-//   return newHead
+  // return newHead
 // }
 
 // Runtime: 64 ms, faster than 79.53% of JavaScript online
@@ -22,13 +22,13 @@
 
 // Recursive solution
 const reverseList = (head) => {
-  if (!head || !head.next) {
+  if (head === null || head.next === null) {
     return head
   }
 
   let tmp = reverseList(head.next)
   head.next.next = head
-  head.next = undefined
+  head.next = null
 
   return tmp
 }
