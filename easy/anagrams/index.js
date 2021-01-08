@@ -26,16 +26,6 @@ const isAnagram = (s, t) => {
   return true
 }
 
-const buildCharMap = (str) => {
-  const charMap = {}
-
-  for (let char of str.replace(/[^\w]/g, '').toLowerCase()) {
-    charMap[char] = charMap[char] + 1 || 1
-  }
-
-  return charMap
-}
-
 // Runtime: 68 ms, faster than 97.06% of JavaScript online
 // submissions for Valid Anagram.
 // Memory Usage: 37.6 MB, less than 48.85% of JavaScript
