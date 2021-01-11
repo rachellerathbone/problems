@@ -16,40 +16,21 @@
 
 // FIRST SOLUTION O(n)
 const intersection = (nums1, nums2) => {
-   const n1Hash = createHash(nums1)
-   const n2Hash = createHash(nums2)
+   const map = new Map()
+   const result = []
 
-   let res = []
-
-   for (let key in n1Hash) {
-      if (n1Hash[key] === n2Hash[key]) {
-        res.push(key)
-      }
+   for (let num of nums1) {
+     map.set(num, map.get(num) + 1 || 1)
    }
 
-  return res
+   for (let num of nums2) {
+     if (map.get(num) >= 1) {
+       result.push(num)
+       map.set(num, map.get(num) -1)
+     }
+   }
+
+   return result
 }
-
-const createHash = (arr) => {
-  let arrHash = {}
-
-  for (let i of arr) {
-    arrHash[i] = 1
-  }
-
-  return arrHash
-}
-
-// Runtime: 64 ms, faster than 72.23% of JavaScript online submissions
-// for Intersection of Two Arrays.
-// Memory Usage: 35.9 MB, less than 17.04% of JavaScript online submissions
-// for Intersection of Two Arrays.
-
-
-
-// Runtime: 60 ms, faster than 98.69% of JavaScript online submissions for
-// Intersection of Two Arrays.
-// Memory Usage: 34.5 MB, less than 63.64% of JavaScript
-// online submissions for Intersection of Two Arrays.
 
 module.exports = intersection
