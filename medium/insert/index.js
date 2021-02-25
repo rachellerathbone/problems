@@ -40,5 +40,32 @@
 // -10^6 <= Node.val <= 10^6
 // -10^6 <= insertVal <= 10^6
 const insert = function(head, insertVal) {
+    if (!head){
+        let newNode = new Node(insertVal);
+        newNode.next = newNode;
+        return newNode;
+    }
 
+    let prev = head;
+    let curr = head.next;
+    let insertHere = false;
+
+    while (true) {
+        const lessThanOrEqualTo = prev.val <= insertVal && insertVal <= curr.val
+        const ifGreaterThan = prev.val > curr.val && insertVal >= prev.val || prev.val > curr.val &&                                    insertVal <= curr.val
+        const prevNextIsHead = prev.next == head
+
+        // handle 3 different cases
+        if (lessThanOrEqualTo || ifGreaterThan || prevNextIsHead) {
+            insertHere = true;
+        }
+
+        if (insertHere) {
+            prev.next = new Node(insertVal, curr);
+            return head;
+        }
+
+        prev = curr;
+        curr = curr.next;
+    }
 };
