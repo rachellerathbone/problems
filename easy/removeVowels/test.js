@@ -8,4 +8,3 @@ test('removeVowels returns the element that occurs the most in an array', () => 
   expect(removeVowels("leetcodeisacommunityforcoders")).toEqual("ltcdscmmntyfrcdrs");
   expect(removeVowels("aeiou")).toEqual("");
 });
-
